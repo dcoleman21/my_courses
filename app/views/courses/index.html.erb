@@ -1,0 +1,10 @@
+<center>
+<h2>Available Courses</h2>
+</center>
+
+<section class='course'>
+  <% @courses.each do |course| %>
+    <h3 class='name'><%= link_to course.name, "/courses/#{course.id}" %></h3>
+    <div class='time'><%= course.time %></div>
+  <% end %>
+</section>

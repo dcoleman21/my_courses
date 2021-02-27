@@ -1,0 +1,11 @@
+<center>
+<h2><%= @student.name %>'s Courses</h2>
+</center>
+
+<% @student.courses.each do |course| %>
+<section class='course' id="course-<%=course.id%>">
+  <h3 class='name'><%= course.name %></h3>
+  <div class='time'><%= course.time %></div>
+  <%= button_to 'Cancel Registration', unregister_path(course.id, @student.id), method: :destroy %>
+</section>
+<% end %>
