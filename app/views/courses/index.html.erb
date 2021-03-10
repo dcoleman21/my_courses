@@ -1,10 +1,20 @@
-<center>
-<h2>Available Courses</h2>
-</center>
+<h2 class="center pad-25-top">Available Courses</h2>
 
-<section class='course'>
-  <% @courses.each do |course| %>
-    <h3 class='name'><%= link_to course.name, "/courses/#{course.id}" %></h3>
-    <div class='time'><%= course.time %></div>
-  <% end %>
-</section>
+<hr>
+
+<div class="container">
+  <div class="row">
+    <% @courses.each do |course| %>
+      <div class="col-sm-6">
+          <div class="course-info card pad-25-tip gutter10">
+            <div class="card-title name center pad-15-top pad-10-bottom">
+              <div class="course">
+                <h3 class='name'><%= link_to course.name, "/courses/#{course.id}" %></h3>
+                <div class='time'><%= course.time %></div>
+              </div>
+            </div>
+          </div>
+      </div>
+    <% end %>
+  </div>
+</div>
