@@ -6,7 +6,7 @@
   <div class="row">
     <% @courses.each do |course| %>
       <div class="col-sm-6">
-          <div class="course-info card pad-25-tip gutter10">
+          <div class="courses-info card pad-25-top gutter10">
             <div class="card-title name center pad-15-top pad-10-bottom">
               <div class="course">
                 <h3 class='name'><%= link_to course.name, "/courses/#{course.id}" %></h3>
