@@ -44,13 +44,31 @@ a:link, a:hover {
   padding-bottom: 10px;
 }
 
+.pad-15-bottom {
+  padding-bottom: 15px;
+}
+
 .gutter10 {
   margin: 10px;
 }
 
-.course-info {
+.courses-info {
   background-color: #b1b1cd;
   width: 20rem;
+  border: solid 1px #999;
+  box-shadow:  0 0 10px  rgba(0,50,0,0.6);
+  -moz-box-shadow: 0 0 10px  rgba(0,50,0,0.6);
+  -webkit-box-shadow: 0 0 10px  rgba(0,50,0,0.6);
+  -o-box-shadow: 0 0 10px  rgba(0,50,0,0.6);
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+}
+
+.course-info {
+  background-color: #b1b1cd;
+  width: 50rem;
   border: solid 1px #999;
   box-shadow:  0 0 10px  rgba(0,50,0,0.6);
   -moz-box-shadow: 0 0 10px  rgba(0,50,0,0.6);
